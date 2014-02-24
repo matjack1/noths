@@ -1,22 +1,4 @@
 require 'spec_helper'
-
-# describe PromotionalRule do
-#   context '#applies' do
-#     let(:item) { build(:product, code: '001', price: 9.25) }
-#     let(:checkout) { Checkout.new }
-#     let(:rule) { PromotionalRule.new(checkout) }
-
-#     before do
-#       2.times { checkout.scan item }
-#     end
-
-#     it 'defaults to false' do
-#       expect(rule.applies?).to eq false
-#     end
-
-#   end
-# end
-
 describe OffFromTotal do
   context 'when total is more than 60 it applies a 10% discount' do
     let(:item) { build(:product, price: 40) }
